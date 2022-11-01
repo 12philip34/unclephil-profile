@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@1,300&display=swap');
+
+/* font-family: 'Fasthand', cursive;
+font-family: 'Island Moments', cursive; */
+
+.introductionContainer{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,rgb(0, 0, 0), black);
+   height: calc(100vh - 80px);
+   padding-top: 100px;
+}
+
+.introductionContentBox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.headerSpan{
+    font-size: 8rem;
+    z-index: 10;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+.headerSpan span{
+    color: crimson;
+}
+
+.introImage{
+    width: 20rem;
+    position: absolute;
+}
+
+@media only screen and (max-width: 400px) {
+    .headerSpan{
+        font-size: 8rem;
+        z-index: 10;
+        color: whitesmoke;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+}

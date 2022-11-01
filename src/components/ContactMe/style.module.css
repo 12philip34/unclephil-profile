@@ -1,0 +1,97 @@
+:root {
+    --box-shadow: .4rem .4rem 1rem rgb(8, 8, 8), -.4rem -.4rem 1rem rgb(31, 29, 30);
+    --box-shadow-inset: .4rem .4rem 1rem rgb(8, 8, 8), -.4rem -.4rem 1rem rgb(31, 29, 30);
+    --box-shadow-hover: .4rem .4rem 1rem rgb(14, 13, 13), -.4rem -.4rem 1rem rgb(46, 44, 45);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@1,300&display=swap');
+
+.formContainer{
+    display: grid;
+    width: 100%;
+    min-height: 100Vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox{
+    width: 500px;
+    padding: 20px;
+    background: rgb(10, 10, 10);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.fieldSet{
+display: flex;
+flex-direction: column;
+padding: 10px;
+}
+
+.label{
+    color: crimson;
+    padding-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.inputBox{
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+}
+
+.textArea{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.submitBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submitButton{
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    color: crimson;
+    background: rgb(10, 10, 10);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.submitButton:hover{
+    box-shadow: var(--box-shadow-hover);
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 768px) {
+    .formBox{
+        width: 300px;
+        padding: 20px;
+        background: rgb(10, 10, 10);
+        box-shadow: var(--box-shadow);
+        border-radius: 10px;
+    }
+    
+    .textArea {
+        columns: 30;
+    }
+}

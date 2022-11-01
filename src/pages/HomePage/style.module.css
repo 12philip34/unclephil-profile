@@ -1,0 +1,28 @@
+.homeContainer{
+    position: relative;
+    background: #000;
+}
+
+.portfolio{
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    z-index: 10;
+}
+
+.portfolioHeader{
+    color: white;
+    font-size: 30px;
+    z-index: 10;
+    text-transform: capitalize;
+}
+.portfolioHeader span{
+    color: crimson;
+}
+
+.headerParagraph{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

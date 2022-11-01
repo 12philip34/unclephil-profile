@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@1,300&display=swap');
+
+:root {
+    --box-shadow: .4rem .4rem 1rem rgb(8, 8, 8), -.4rem -.4rem 1rem rgb(31, 29, 30);
+    --box-shadow-hover: .4rem .4rem 1rem rgb(14, 13, 13), -.4rem -.4rem 1rem rgb(46, 44, 45);
+}
+.aboutMeContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+    width: 100%;
+    height: auto;
+}
+
+.aboutMeTopDiv{
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.aboutTopText{
+    display: flex;
+}
+
+.aboutThree{
+    color: white;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.aboutThree span{
+    color: crimson;
+    text-align: start;
+    font-size: 30px;
+}
+
+.abouthTwo{
+    color: white;
+    text-align: start;
+    text-transform: capitalize;
+    font-size: 3em;
+}
+
+.aboutMeBottomDiv{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.aboutBlog{
+    margin-top: 20px;
+    line-height: 25px;
+    color: white;
+}
+
+.aboutMeXperience{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.aboutMeXperience:hover .xperienceContentDiv {
+    opacity: 0.5;
+}
+
+.aboutMeXperience .xperienceContentDiv:hover {
+    opacity: 1;
+}
+
+.xperienceContentDiv h3{
+    color: white;
+    text-align: center;
+}
+
+.xperienceContentDiv{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background: rgb(10, 10, 10);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.xperienceContentDiv:hover{
+    box-shadow: var(--box-shadow-hover);
+}
+
+.xperienceContentDiv h2{
+    color: crimson;
+}
+
+.xperienceContentDiv p{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 333px) {
+    .abouthTwo{
+        color: white;
+        text-align: start;
+        text-transform: capitalize;
+        font-size: 2.8em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutMeBottomDiv{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .aboutMeXperience{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .xperienceContentDiv{
+        width: 250px;
+    }
+    
+}
+
+@media only screen and (min-width:1550px) and (max-width: 2700px) {
+    .aboutMeBottomDiv{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+    }
+}
