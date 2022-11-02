@@ -1,4 +1,7 @@
 
+*{
+  scroll-behavior: smooth;
+}
 .slider {
   position: relative;
   height: 100vh;

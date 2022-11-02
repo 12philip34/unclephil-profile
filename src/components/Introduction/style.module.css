@@ -29,6 +29,7 @@ font-family: 'Island Moments', cursive; */
     z-index: 10;
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 .headerSpan span{
@@ -46,5 +47,6 @@ font-family: 'Island Moments', cursive; */
         z-index: 10;
         color: whitesmoke;
         font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
     }
 }
